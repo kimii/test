@@ -292,7 +292,7 @@ p_0xffff20000809521c                                    6            0_
 
 * * *
 
-Bibliography
+参考文献
 
 [[1]][5] Jim Keniston, Prasanna S. Panchamukhi, Masami Hiramatsu. “Kernel Probes (Kprobes).” _GitHub_. GitHub, Inc., 15 Aug. 2016\. Web. 13 Dec. 2016.
 
