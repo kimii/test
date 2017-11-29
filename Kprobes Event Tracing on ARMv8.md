@@ -310,7 +310,7 @@ p_0xffff20000809521c                                    6            0_
 via: http://www.linaro.org/blog/kprobes-event-tracing-armv8/
 
 作者：[ David Long][a]
-译者：[译者ID](https://github.com/译者ID)
+译者：[kimii](https://github.com/kimii)
 校对：[校对者ID](https://github.com/校对者ID)
 
 本文由 [LCTT](https://github.com/LCTT/TranslateProject) 原创编译，[Linux中国](https://linux.cn/) 荣誉推出
