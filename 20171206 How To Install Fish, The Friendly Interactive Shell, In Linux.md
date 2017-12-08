@@ -1,21 +1,20 @@
-Translating by kimii
 How To Install Fish, The Friendly Interactive Shell, In Linux
 ======
-Fish, acronym of friendly interactive shell, is a well equipped, smart and user-friendly shell for Unix-like systems. Fish comes with many significant features, such as autosuggestions, syntax highlighting, searchable history (like CTRL+r in Bash), smart search functionality, glorious VGA color support, web based configuration, man page completions and many, out of the box. Just install it and start using it in no time. No more extra configuration or you don’t have to install any extra add-ons/plug-ins!
+Fish，友好的交互式 shell 的缩写，它是一个适用于类 Unix 系统的装备良好，智能而且用户友好的 shell。Fish 有着很多重要的功能，比如自动提示，语法高亮，可搜索的历史记录（像在 bash 中 CTRL+r），智能搜索功能，极好的 VGA 颜色支持，基本的 web 设置，完善的手册页和许多开箱即用的功能。尽管安装并立即使用它吧。无需更多其他配置，你也不需要安装任何额外的附加组件/插件!
 
-In this tutorial, let us discuss how to install and use fish shell in Linux.
+在这篇教程中，我们讨论如何在 linux 中安装和使用 fish shell。
 
-#### Install Fish
+#### 安装 Fish
 
-Even though fish is very user-friendly and feature-rich shell, it is not included in the default repositories of most Linux distributions. It is available in the official repositories of only few Linux distributions such as Arch Linux, Gentoo, NixOS, and Ubuntu etc. However, installing fish is not a big deal.
+尽管 fish 是一个非常用户友好的并且功能丰富的 shell，但在大多数 Linux 发行版的默认仓库中它并没有被包括。它只在少数 Linux 发行版中的官方仓库中找到，如 Arch 
 
-On Arch Linux and its derivatives, run the following command to install it.
+在 Arch Linux 和它的衍生版上，运行以下命令来安装它。
 
 ```
 sudo pacman -S fish
 ```
 
-On CentOS 7 run the following as root:
+在 CentOS 7上以 root 运行以下命令：
 
 ```
 cd /etc/yum.repos.d/
@@ -29,7 +28,7 @@ wget https://download.opensuse.org/repositories/shells:fish:release:2/CentOS_7/s
 yum install fish
 ```
 
-On CentOS 6 run the following as root:
+在 CentOS 6上以 root 运行以下命令：
 
 ```
 cd /etc/yum.repos.d/
@@ -43,7 +42,7 @@ wget https://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/s
 yum install fish
 ```
 
-On Debian 9 run the following as root:
+在 Debian 9上以 root 运行以下命令：
 
 ```
 wget -nv https://download.opensuse.org/repositories/shells:fish:release:2/Debian_9.0/Release.key -O Release.key
@@ -65,7 +64,7 @@ apt-get update
 apt-get install fish
 ```
 
-On Debian 8 run the following as root:
+在 Debian 8上以 root 运行以下命令：
 
 ```
 wget -nv https://download.opensuse.org/repositories/shells:fish:release:2/Debian_8.0/Release.key -O Release.key
@@ -87,7 +86,7 @@ apt-get update
 apt-get install fish
 ```
 
-On Fedora 26 run the following as root:
+在 Fedora 26上以 root 运行以下命令：
 
 ```
 dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:fish:release:2/Fedora_26/shells:fish:release:2.repo
@@ -97,7 +96,7 @@ dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:
 dnf install fish
 ```
 
-On Fedora 25 run the following as root:
+在 Fedora 25上以 root 运行以下命令：
 
 ```
 dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:fish:release:2/Fedora_25/shells:fish:release:2.repo
@@ -107,7 +106,7 @@ dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:
 dnf install fish
 ```
 
-On Fedora 24 run the following as root:
+在 Fedora 24上以 root 运行以下命令：
 
 ```
 dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:fish:release:2/Fedora_24/shells:fish:release:2.repo
@@ -117,7 +116,7 @@ dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:
 dnf install fish
 ```
 
-On Fedora 23 run the following as root:
+在 Fedora 23上以 root 运行以下命令：
 
 ```
 dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:fish:release:2/Fedora_23/shells:fish:release:2.repo
@@ -127,13 +126,13 @@ dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:
 dnf install fish
 ```
 
-On openSUSE: run the following as root:
+在 openSUSE上以 root 运行以下命令：
 
 ```
 zypper install fish
 ```
 
-On RHEL 7 run the following as root:
+在 RHEL 7上以 root 运行以下命令：
 
 ```
 cd /etc/yum.repos.d/
@@ -147,7 +146,7 @@ wget https://download.opensuse.org/repositories/shells:fish:release:2/RHEL_7/she
 yum install fish
 ```
 
-On RHEL-6 run the following as root:
+在 RHEL-6上以 root 运行以下命令：
 
 ```
 cd /etc/yum.repos.d/
@@ -161,7 +160,7 @@ wget https://download.opensuse.org/repositories/shells:fish:release:2/RedHat_RHE
 yum install fish
 ```
 
-On Ubuntu and its derivatives:
+在 Ubuntu 和它的衍生版上：
 
 ```
 sudo apt-get update
@@ -171,39 +170,42 @@ sudo apt-get update
 sudo apt-get install fish
 ```
 
-That’s it. It is time explore fish shell.
+就这样了。是时候探索 fish shell 了。
 
-### Usage
+### 用法
 
-To switch to fish from your default shell, do:
+要从你默认的 shell 切换到 fish,请执行以下操作：
 
 ```
 $ fish
 Welcome to fish, the friendly interactive shell
 ```
 
-You can find the default fish configuration at ~/.config/fish/config.fish (similar to .bashrc). If it doesn’t exist, just create it.
+你可以在 ~/.config/fish/config.fish 上找到默认的 fish 配置（类似于 .bashrc）。如果它不存在，就创建它吧。
 
-#### Auto suggestions
+#### 自动提示
 
-When I type a command, it automatically suggests a command in a light grey color. So, I had to type a first few letters of a Linux and hit tab key to complete the command.
+当我输入一个命令，它自动提示一个浅灰色的命令。所以，我需要输入一个 Linux 命令的前几个字母，然后按下 tab 键来完成这个命令。
 
  [![](http://www.ostechnix.com/wp-content/uploads/2017/12/fish-1.png)][2] 
 
-If there are more possibilities, it will list them. You can select the listed commands from the list by using up/down arrow keys. After choosing the command you want to run, just hit the right arrow key and press ENTER to run it.
+如果有更多的可能性，它将会列出它们。你可以使用上/下箭头键从列表中选择列出的命令。在选择你想运行的命令后，只需按下右箭头键，然后按下 ENTER 运行它。 
 
  [![](http://www.ostechnix.com/wp-content/uploads/2017/12/fish-2.png)][3] 
 
-No more CTRL+r! As you already know, we do reverse search by pressing ctrl+r to search for commands from history in Bash shell. But it is not necessary in fish shell. Since it has autosuggestions capability, just type first few letters of a command, and pick the command from the list that you already executed, from the history. Cool, yeah?
+无需 CTRL+r 了！正如你已知道的，我们通过按 ctrl+r 来反向搜索 Bash shell 中的历史命令。但在 fish shell 中是没有必要的。由于它有自动提示功能，只需输入命令的前几个字母，然后从历史记录中选择已经执行的命令。Cool,是吗？
 
-#### Smart search
+#### 智能搜索
 
-We can also do smart search to find a specific command, file or directory. For example, I type the substring of a command, then hit the down arrow key to enter into smart search and again type a letter to pick the required command from the list.
+我们也可以使用智能搜索来查找一个特定的命令，文件或者目录。例如，我输入一个命令的子串，然后
+按向下箭头键进行智能搜索，再次输入一个字母来从列表中选择所需的命令。
 
  [![](http://www.ostechnix.com/wp-content/uploads/2017/12/fish-6.png)][4] 
 
-#### Syntax highlighting
+#### 语法高亮
 
+
+当你输入一个命令时，你将注意到语法高亮。请看下面当我在 Bash shell 和 fish shell 中输入相同的命令时截图的区别。 
 You will notice the syntax highlighting as you type a command. See the difference in below screenshots when I type the same command in Bash and fish shells.
 
 Bash:
@@ -214,13 +216,14 @@ Fish:
 
  [![](http://www.ostechnix.com/wp-content/uploads/2017/12/fish-4.png)][6] 
 
+正如你所看到的，“sudo” 在 fish shell 中已经被高亮显示。此外，默认情况下它将以红色显示无效命令。
 As you see, “sudo” has been highlighted in fish shell. Also, it will display the invalid commands in red color by default.
 
-#### Web based configuration
+#### 基于 web 的配置
 
-This is yet another cool feature of fish shell. We can can set our colors, change fish prompt, and view functions, variables, history, key bindings all from a web page.
+这是 fish shell 另一个很酷的功能。我们可以设置我们的颜色，更改 fish 提示，并从网页上查看所有功能，变量，历史记录，键绑定。
 
-To start the web configuration interface, just type:
+启动 web 配置接口，只需输入：
 
 ```
 fish_config
@@ -230,90 +233,92 @@ fish_config
 
 #### Man page completions
 
-Bash and other shells supports programmable completions, but only fish generates them automatically by parsing your installed man pages.
+Bash 和 其它 shells 支持可编程完成，但只有 fish 会通过解析已安装的手册自动生成他们。
 
-To do so, run:
+为此，请运行：
 
 ```
 fish_update_completions
 ```
 
-Sample output would be:
+实例输出将是：
 
 ```
 Parsing man pages and writing completions to /home/sk/.local/share/fish/generated_completions/
  3435 / 3435 : zramctl.8.gz
 ```
 
-#### Disable greetings
+#### 禁用问候
 
-By default, fish greets you (Welcome to fish, the friendly interactive shell) at startup. If you don’t this greeting message, you can disable it. To do so, edit fish configuration file:
+默认情况下，fish 在启动时问候（Welcome to fish, the friendly interactive shell）。如果你不想要这个问候消息，可以禁用它。为此，编辑 fish 配置文件：
 
 ```
 vi ~/.config/fish/config.fish
 ```
 
-Add the following line:
+添加以下行：
 
 ```
 set -g -x fish_greeting ''
 ```
 
+你也可以设置任意自定义的问候语，而不是禁用 fish 问候。
 Instead of disabling fish greeting, you can also set any custom greeting message.
 
 ```
 set -g -x fish_greeting 'Welcome to OSTechNix'
 ```
 
-#### Getting help
+#### 获得帮助
 
-This one is another impressive feature that caught my attention. To open fish documentation page in your default web browser from Terminal, just type:
+这是另一个引人注目的令人印象深刻的功能。要在终端的默认 web 浏览器中打开 fish 文档页面，只需输入：
 
 ```
 help
 ```
 
-The official documentation will be opened in your default browser. Also, you can use man pages to display the help section of any command.
+官方文档将会在你的默认浏览器中打开。另外，你可以使用手册来显示任何命令的帮助部分。
 
 ```
 man fish
 ```
 
-#### Set Fish as default shell
+#### 设置 fish 为默认 shell
 
+非常喜欢它？太好了！设置它作为默认 shell 吧。为此，请使用命令 chsh:
 Liked it very much? Great! Just set it as default shell. To do so, use chsh command:
 
 ```
 chsh -s /usr/bin/fish
 ```
 
-Here, /usr/bin/fish is the path to the fish shell. If you don’t know the correct path, the following command will help you.
+在这里，/usr/bin/fish 是 fish shell 的路径。如果你不知道正确的路径，以下命令将会帮助你：
 
 ```
 which fish
 ```
 
-Log out and log in back to use the new default shell.
+注销并且重新登录以使用新的默认 shell.
 
-Please remember that many shell scripts written for Bash may not fully compatible with fish.
+请记住，为 Bash 编写的许多 shell 脚本可能不完全兼容 fish。
 
-To switch back to Bash, just run:
+要切换会 Bash,只需运行：
 
 ```
 bash
 ```
 
-If you want Bash as your default shell permanently, run:
+如果你想 Bash 作为你的永久默认 shell，运行：
 
 ```
 chsh -s /bin/bash
 ```
 
-And, that’s all for now folks. At this stage, you might get a basic idea about fish shell usage. If you’re looking for a Bash alternatives, fish might be a good option.
+而且，对目前的各位，这就是全部了。在这个阶段，你可能会得到一个有关 fish shell 使用的基本概念。 如果你正在寻找一个Bash的替代品，fish 可能是一个不错的选择。
 
-Cheers!
+干杯!
 
-Resource:
+资源:
 
 *   [fish shell website][1]
 
