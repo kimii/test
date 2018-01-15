@@ -1,6 +1,5 @@
 检查 linux 上网络连接的更多方法
 ======
-ifconfig 
 ifconfig 和 netstat 命令当然非常有用，但还有很多其他命令能帮你查看 linux 系统上的网络状况。本文探索了一些检查网络连接的非常简便的命令。 
 
 ### ip 命令
@@ -175,7 +174,7 @@ tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 byt
 
 当你运行像这样的命令时，会看到非常多的输出。
 
-这个命令捕获来自特定主机和 eth0 上的 11 个数据包。 -w 选项标识保存捕获包的文件。在这个示例命令中，我们只要求捕获 11 个数据包。
+这个命令捕获来自特定主机和 eth0 上的 11 个数据包。-w 选项标识保存捕获包的文件。在这个示例命令中，我们只要求捕获 11 个数据包。
 
 ```
 $ sudo tcpdump -c 11 -i eth0 src 192.168.0.32 -w packets.pcap
