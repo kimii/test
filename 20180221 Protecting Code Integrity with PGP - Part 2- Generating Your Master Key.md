@@ -41,7 +41,7 @@
 
 
 
-带有[C](认证)能力的密钥被认为是“主”密钥，因为它是唯一可以用来表明与其他密钥关系的密钥。只有[C]密钥可以被用于：
+带有[C] (认证)能力的密钥被认为是“主”密钥，因为它是唯一可以用来表明与其他密钥关系的密钥。只有[C]密钥可以被用于：
 
   * 添加或撤销其他密钥（子密钥）的 S/E/A 能力
   
@@ -166,7 +166,7 @@ $ gpg --quick-set-primary-uid [fpr] 'Alice Engineer <alice@example.org>'
 via: https://www.linux.com/blog/learn/PGP/2018/2/protecting-code-integrity-pgp-part-2-generating-and-protecting-your-master-pgp-key
 
 作者：[KONSTANTIN RYABITSEV][a]
-译者：[译者ID](https://github.com/kimii)
+译者：[kimii](https://github.com/kimii)
 校对：[校对者ID](https://github.com/校对者ID)
 
 本文由 [LCTT](https://github.com/LCTT/TranslateProject) 原创编译，[Linux中国](https://linux.cn/) 荣誉推出
